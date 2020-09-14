@@ -74,7 +74,7 @@ function [TD, maximum, transient_norm_square] =...
 %   Written by M. Alma and I.D. Landau (GIPSA-LAB)
 %   Version 1, September 16, 2010
 %
-%   Updated by Xu Chen (xuchen@cal.berkeley.edu)
+%   Updated by Xu Chen, University of Washington
 %   Version 2, 2010-09-26
 %              Added residual norm calculation
 %              Added a switch to disable the plots

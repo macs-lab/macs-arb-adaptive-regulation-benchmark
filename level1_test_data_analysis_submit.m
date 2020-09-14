@@ -1,3 +1,4 @@
+% Author: Xu Chen
 % 2010-09-07:   added open loop and closed loop comparison
 %               removed the 'v6' plot option
 if 1

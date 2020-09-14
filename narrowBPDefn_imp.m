@@ -14,7 +14,7 @@ function varargout = narrowBPDefn_imp(alpha,omega_Hz,Ts,plotflag)
 %   Q: Desired filter
 %   IMP: corresponding internal model
 % ============================================================
-%   Copyright (c) 2008-, Xu Chen, xuchen@cal.berkeley.edu
+%   Copyright (c) 2008-, Xu Chen, University of Washington
 %   Author(s): Xu Chen
 %   Initial version: 2010-09-27
 % ============================================================

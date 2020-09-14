@@ -3,11 +3,9 @@
 % 1 narrow band disturbance
 % Benchmark project by prof. Landau.
 % ============================================================
-%   Copyright (c) 2008-, Xu Chen, xuchen@cal.berkeley.edu
+%   Copyright (c) 2008-, Xu Chen, University of Washington
 %   Author(s): Xu Chen
-%              University of California at Berkeley
-%              Berkeley, CA, 94720, USA
-%   Advisor:   Prof. Masayoshi Tomizuka
+%              University of Washington
 % ============================================================
 % 2012-08-03
 clear all
