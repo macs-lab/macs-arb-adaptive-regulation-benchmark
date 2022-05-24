@@ -1,3 +1,5 @@
+[cover](./cover.jpg)
+
 # MACS Adaptive Regulation Benchmark (MACS ARB)
 
 https://github.com/macs-lab/macs-arb-adaptive-regulation-benchmark
@@ -10,6 +12,5 @@ See details in: [Chen, X.; and Tomizuka, M. Selective Model Inversion and Adapti
 
 ## Running the Code
 
-run standard_test_embedFun_submit.m to get the results
+run standard_test_embedFun_submit.m and configure different options from the command prompt.
 
-author: Xu Chen, University of Washington

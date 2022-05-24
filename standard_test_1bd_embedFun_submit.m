@@ -1,13 +1,13 @@
 % Adaptive multiple narrow-band disturbance rejection applied to an active
 % suspension.
 % 1 narrow band disturbance
-% Benchmark project by prof. Landau.
+% Benchmark project by prof. Ioan Landau.
 % ============================================================
 %   Copyright (c) 2008-, Xu Chen, University of Washington
 %   Author(s): Xu Chen
 %              University of Washington
 % ============================================================
-% 2012-08-03
+% init version: 2012-08-03
 clear all
 close all
 %% Define Constants
@@ -15,13 +15,9 @@ FLAG_CONST_DIST_FREQ        = 1;
 SW_EXPERIMENT               = 1;
 FLAG_STEP_CHANGE_DIST_FREQ  = 0;
 FLAG_CHIRP_DIST             = 2;
-SW_ONE_SIMU_TEST            = 1; %  test a single frequency; be careful if
-%                                   default value: 0.
-%                                   (testing the full frequency profile takes time.)
-% default turn on const or step change disturbance frequency
-SW_DIST_ON                  = 1;
-% default turn off chirp disturbance
-SW_CHIRP_DIST               = 0;
+SW_ONE_SIMU_TEST            = 1; % test a single frequency by default
+SW_DIST_ON                  = 1; % default turn on const or step change disturbance frequency
+SW_CHIRP_DIST               = 0; % default turn off chirp disturbance
 SW_TUNE                     = 0;
 SW_BASELINE_CONTROL_SYS     = 0; % check the baseline system
 SW_ADDITIONAL_PLOT          = 0;
@@ -39,7 +35,7 @@ bode_opt.PhaseWrapping = 'On';
 %       FLAG_DIST_FREQ = 1 ------ constant disturbance frequency
 %       FLAG_DIST_FREQ = 2 ------ chirp disturbance
 disp('=============Multiple Narrow Band Disturbance Rejection============')
-disp('  Author: Xu Chen (xuchen@cal.berkeley.edu)')
+disp('=============       Adaptive Disturbance Observer      ============')
 disp('===================================================================')
 disp('SELECT TEST OPTIONS:')
 disp('0 (default) ---- step changing disturbance frequency')
@@ -162,8 +158,6 @@ load RS_contr_sec R S
 %/////////// secondary path sys tf
 load model_sec.mat B A %numerator and denominator of the secondary path
 
-% load hinf_inv_landau
-% P_inv = tf(invP);
 load hinf_inv_landau_coef
 P_inv = tf(numINVP,denINVP,Ts);
 %/////////// loading noise values

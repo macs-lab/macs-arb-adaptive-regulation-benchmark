@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "23.0"
+    ComputedModelVersion    "23.1"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -65,17 +65,17 @@ Model {
   "   /Repeating Sequence Stair/LimitedCounter</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" tracking_l"
   "evel=\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<count>2</co"
   "unt>\n					<bucket_count>2</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" tracking_l"
-  "evel=\"0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>SimulinkFixed"
-  "Point:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_versio"
-  "n>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level="
-  "\"0\" version=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" trackin"
-  "g_level=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<dat"
-  "e>20160608</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version="
-  "\"1\">\n									<is_special>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_"
-  "duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<t"
-  "ime_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastM"
-  "odified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n		"
-  "					<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>"
+  "evel=\"0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>Simulink:Data"
+  "Type:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_versi"
+  "on>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level"
+  "=\"0\" version=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" tracki"
+  "ng_level=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<da"
+  "te>20160608</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version"
+  "=\"1\">\n									<is_special>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time"
+  "_duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<"
+  "time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</Last"
+  "Modified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n	"
+  "						<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>"
   "\n									<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n					"
   "		<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</d"
   "ate>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_dura"
@@ -108,8 +108,8 @@ Model {
       Dimension		      3
       Object {
 	$ObjectID		2
-	IsActive		[0]
-	Location		[8.0, 0.0, 980.0, 1080.0]
+	IsActive		[1]
+	Location		[14.0, 149.0, 980.0, 681.0]
 	Object {
 	  $PropName		  "ModelBrowserInfo"
 	  $ObjectID		  3
@@ -118,7 +118,7 @@ Model {
 	  DockPosition		  "Left"
 	  Width			  [50]
 	  Height		  [50]
-	  Filter		  [8]
+	  Filter		  [9]
 	  Minimized		  "Unset"
 	}
 	Object {
@@ -127,24 +127,38 @@ Model {
 	  $ClassName		  "Simulink.ExplorerBarInfo"
 	  Visible		  [1]
 	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  5
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  IsTabbed		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "173"
-	  Extents		  [942.0, 845.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-10.875, -253.0]
-	  SceneRectInView	  [-10.875, -253.0, 942.0, 845.0]
+	Array {
+	  Type			  "Simulink.EditorInfo"
+	  Dimension		  2
+	  Object {
+	    $ObjectID		    5
+	    IsActive		    [1]
+	    IsTabbed		    [1]
+	    ViewObjType		    "SimulinkTopLevel"
+	    LoadSaveID		    "0"
+	    Extents		    [942.0, 446.0]
+	    ZoomFactor		    [1.0]
+	    Offset		    [-72.208333333333144, -44.875000000000114]
+	    SceneRectInView	    [-72.208333333333144, -44.875000000000114, 942.0, 446.0]
+	  }
+	  Object {
+	    $ObjectID		    6
+	    IsActive		    [0]
+	    IsTabbed		    [0]
+	    ViewObjType		    "SimulinkSubsys"
+	    LoadSaveID		    "173"
+	    Extents		    [942.0, 845.0]
+	    ZoomFactor		    [1.0]
+	    Offset		    [-10.875, -253.0]
+	    SceneRectInView	    [-10.875, -253.0, 942.0, 845.0]
+	  }
+	  PropName		  "EditorsInfo"
 	}
 	Array {
 	  Type			  "Simulink.DockComponentInfo"
 	  Dimension		  2
 	  Object {
-	    $ObjectID		    6
+	    $ObjectID		    7
 	    Type		    "GLUE2:PropertyInspector"
 	    ID			    "Property Inspector"
 	    Visible		    [0]
@@ -157,7 +171,7 @@ Model {
 	    Minimized		    "Unset"
 	  }
 	  Object {
-	    $ObjectID		    7
+	    $ObjectID		    8
 	    Type		    "Simulink:Editor:ReferencedFiles"
 	    ID			    "Referenced Files"
 	    Visible		    [0]
@@ -176,7 +190,7 @@ Model {
 	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABrAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpA"
 	"HQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjwD///"
 	"8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHk"
-	"AIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAD1AAAA4oAAAABAAAAAgAAAAEAAAAC/AAAAAA="
+	"AIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAD1AAAAfsAAAABAAAAAgAAAAEAAAAC/AAAAAA="
 	Array {
 	  Type			  "Cell"
 	  Dimension		  0
@@ -185,29 +199,29 @@ Model {
 	WindowUuid		"9dafdd02-ce9a-4915-b62b-8c2a56afb16e"
       }
       Object {
-	$ObjectID		8
+	$ObjectID		9
 	IsActive		[0]
 	Location		[8.0, 0.0, 983.0, 1080.0]
 	Object {
 	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  9
+	  $ObjectID		  10
 	  $ClassName		  "Simulink.ModelBrowserInfo"
 	  Visible		  [0]
 	  DockPosition		  "Left"
 	  Width			  [50]
 	  Height		  [50]
-	  Filter		  [8]
+	  Filter		  [9]
 	  Minimized		  "Unset"
 	}
 	Object {
 	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  $ClassName		  "Simulink.ExplorerBarInfo"
 	  Visible		  [1]
 	}
 	Object {
 	  $PropName		  "EditorsInfo"
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  $ClassName		  "Simulink.EditorInfo"
 	  IsActive		  [1]
 	  IsTabbed		  [1]
@@ -222,7 +236,7 @@ Model {
 	  Type			  "Simulink.DockComponentInfo"
 	  Dimension		  2
 	  Object {
-	    $ObjectID		    12
+	    $ObjectID		    13
 	    Type		    "GLUE2:PropertyInspector"
 	    ID			    "Property Inspector"
 	    Visible		    [0]
@@ -235,7 +249,7 @@ Model {
 	    Minimized		    "Unset"
 	  }
 	  Object {
-	    $ObjectID		    13
+	    $ObjectID		    14
 	    Type		    "Simulink:Editor:ReferencedFiles"
 	    ID			    "Referenced Files"
 	    Visible		    [0]
@@ -263,23 +277,23 @@ Model {
 	WindowUuid		"c1c8be99-c8d8-4d7b-ab49-0ad783949621"
       }
       Object {
-	$ObjectID		14
-	IsActive		[1]
+	$ObjectID		15
+	IsActive		[0]
 	Location		[8.0, 0.0, 980.0, 1080.0]
 	Object {
 	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  $ClassName		  "Simulink.ModelBrowserInfo"
 	  Visible		  [0]
 	  DockPosition		  "Left"
 	  Width			  [50]
 	  Height		  [50]
-	  Filter		  [8]
+	  Filter		  [9]
 	  Minimized		  "Unset"
 	}
 	Object {
 	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  $ClassName		  "Simulink.ExplorerBarInfo"
 	  Visible		  [1]
 	}
@@ -287,9 +301,20 @@ Model {
 	  Type			  "Simulink.EditorInfo"
 	  Dimension		  4
 	  Object {
-	    $ObjectID		    17
+	    $ObjectID		    18
 	    IsActive		    [1]
 	    IsTabbed		    [1]
+	    ViewObjType		    "SimulinkTopLevel"
+	    LoadSaveID		    "0"
+	    Extents		    [942.0, 845.0]
+	    ZoomFactor		    [1.0]
+	    Offset		    [-27.875, -225.875]
+	    SceneRectInView	    [-27.875, -225.875, 942.0, 845.0]
+	  }
+	  Object {
+	    $ObjectID		    19
+	    IsActive		    [0]
+	    IsTabbed		    [0]
 	    ViewObjType		    "SimulinkSubsys"
 	    LoadSaveID		    "188"
 	    Extents		    [942.0, 845.0]
@@ -298,7 +323,7 @@ Model {
 	    SceneRectInView	    [-74.68359375, -245.5, 942.0, 845.0]
 	  }
 	  Object {
-	    $ObjectID		    18
+	    $ObjectID		    20
 	    IsActive		    [0]
 	    IsTabbed		    [0]
 	    ViewObjType		    "SimulinkSubsys"
@@ -309,18 +334,7 @@ Model {
 	    SceneRectInView	    [-10.875, -253.0, 942.0, 845.0]
 	  }
 	  Object {
-	    $ObjectID		    19
-	    IsActive		    [0]
-	    IsTabbed		    [0]
-	    ViewObjType		    "SimulinkTopLevel"
-	    LoadSaveID		    "0"
-	    Extents		    [942.0, 845.0]
-	    ZoomFactor		    [1.0]
-	    Offset		    [-27.875, -225.875]
-	    SceneRectInView	    [-27.875, -225.875, 942.0, 845.0]
-	  }
-	  Object {
-	    $ObjectID		    20
+	    $ObjectID		    21
 	    IsActive		    [0]
 	    IsTabbed		    [0]
 	    ViewObjType		    "SimulinkSubsys"
@@ -336,7 +350,7 @@ Model {
 	  Type			  "Simulink.DockComponentInfo"
 	  Dimension		  2
 	  Object {
-	    $ObjectID		    21
+	    $ObjectID		    22
 	    Type		    "GLUE2:PropertyInspector"
 	    ID			    "Property Inspector"
 	    Visible		    [0]
@@ -349,7 +363,7 @@ Model {
 	    Minimized		    "Unset"
 	  }
 	  Object {
-	    $ObjectID		    22
+	    $ObjectID		    23
 	    Type		    "Simulink:Editor:ReferencedFiles"
 	    ID			    "Referenced Files"
 	    Visible		    [0]
@@ -378,7 +392,7 @@ Model {
       }
       PropName		      "WindowsInfo"
     }
-    BDUuid		    ""
+    BDUuid		    "6e351cfb-990d-495d-8ae0-86b6a4f82be0"
   }
   HideAutomaticNames	  on
   SequenceViewerTimePrecision 3
@@ -389,9 +403,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "xuchen"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon May 23 11:36:18 2022"
-  RTWModifiedTimeStamp	  575206446
-  ModelVersionFormat	  "%<AutoIncrement:23.0>"
+  LastModifiedDate	  "Tue May 24 09:17:49 2022"
+  RTWModifiedTimeStamp	  575284630
+  ModelVersionFormat	  "%<AutoIncrement:23.1>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -448,7 +462,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    23
+    $ObjectID		    24
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "simulator_1bd_submit"
     Array {
@@ -494,7 +508,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      24
+      $ObjectID		      25
       Version		      "20.1.0"
       DisabledProps	      []
       Description	      ""
@@ -502,7 +516,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  25
+	  $ObjectID		  26
 	  Version		  "20.1.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -544,7 +558,7 @@ Model {
 	  ODENIntegrationMethod	  "ode3"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  26
+	  $ObjectID		  27
 	  Version		  "20.1.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -586,7 +600,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  27
+	  $ObjectID		  28
 	  Version		  "20.1.0"
 	  Array {
 	    Type		    "Cell"
@@ -660,7 +674,7 @@ Model {
 	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  28
+	  $ObjectID		  29
 	  Version		  "20.1.0"
 	  Array {
 	    Type		    "Cell"
@@ -783,7 +797,7 @@ Model {
 	  VariantConditionMismatch "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  29
+	  $ObjectID		  30
 	  Version		  "20.1.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -833,7 +847,7 @@ Model {
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  30
+	  $ObjectID		  31
 	  Version		  "20.1.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -853,7 +867,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  31
+	  $ObjectID		  32
 	  Version		  "20.1.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -897,7 +911,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  32
+	  $ObjectID		  33
 	  Version		  "20.1.0"
 	  Array {
 	    Type		    "Cell"
@@ -1003,7 +1017,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      33
+	      $ObjectID		      34
 	      Version		      "20.1.0"
 	      Array {
 		Type			"Cell"
@@ -1093,7 +1107,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      34
+	      $ObjectID		      35
 	      Version		      "20.1.0"
 	      Array {
 		Type			"Cell"
@@ -1200,7 +1214,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  35
+	  $ObjectID		  36
 	  Version		  "20.1.0"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1249,11 +1263,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    24
+    $ObjectID		    25
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    36
+    $ObjectID		    37
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1657,9 +1671,9 @@ Model {
   }
   System {
     Name		    "simulator_1bd_submit"
-    Location		    [8, 0, 988, 1080]
+    Location		    [14, 149, 994, 830]
     SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1750,7 +1764,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    37
+	    $ObjectID		    38
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "sinusoidal disturbances block"
 	    Help		    "With this simulink block, one can define his sinusoidal disturbances.\nEnter\nLevel allow us to define"
@@ -1765,56 +1779,56 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      8
 	      Object {
-		$ObjectID		38
+		$ObjectID		39
 		Type			"edit"
 		Name			"level"
 		Prompt			"Level (n for n sinusoids)"
 		Value			"1"
 	      }
 	      Object {
-		$ObjectID		39
+		$ObjectID		40
 		Type			"edit"
 		Name			"freq1"
 		Prompt			"Vector containing first disturbance frequencies sequence [f1;f2;f3] (put 0 if not needed) (Hz)"
 		Value			"dist_seq1"
 	      }
 	      Object {
-		$ObjectID		40
+		$ObjectID		41
 		Type			"edit"
 		Name			"freq2"
 		Prompt			"Vector containing second disturbance frequencies sequence [f1;f2;f3] (put 0 if not needed) (Hz)"
 		Value			"dist_seq2"
 	      }
 	      Object {
-		$ObjectID		41
+		$ObjectID		42
 		Type			"edit"
 		Name			"freq3"
 		Prompt			"Vector containing third disturbance frequencies sequence [f1;f2;f3] (put 0 if not needed) (Hz)"
 		Value			"dist_seq3"
 	      }
 	      Object {
-		$ObjectID		42
+		$ObjectID		43
 		Type			"edit"
 		Name			"t0"
 		Prompt			"Start disturbances time (sec)"
 		Value			"t_NBon"
 	      }
 	      Object {
-		$ObjectID		43
+		$ObjectID		44
 		Type			"edit"
 		Name			"T"
 		Prompt			"Time delay between two disturbances (sec)"
 		Value			"t_NBdur"
 	      }
 	      Object {
-		$ObjectID		44
+		$ObjectID		45
 		Type			"edit"
 		Name			"Amp"
 		Prompt			"Amplitude"
 		Value			"0.1"
 	      }
 	      Object {
-		$ObjectID		45
+		$ObjectID		46
 		Type			"edit"
 		Name			"Te"
 		Prompt			"Sample time (put 0)"
@@ -3824,7 +3838,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    46
+	    $ObjectID		    47
 	    $ClassName		    "Simulink.Mask"
 	    Display		    "disp('Chirp disturbance')"
 	  }
@@ -3867,70 +3881,70 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		47
+		$ObjectID		48
 		$ClassName		"Simulink.Mask"
 		Display			"disp ('Chirp Generator')"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  9
 		  Object {
-		    $ObjectID		    48
+		    $ObjectID		    49
 		    Type		    "edit"
 		    Name		    "n"
 		    Prompt		    "level"
 		    Value		    "chirp_dist.level"
 		  }
 		  Object {
-		    $ObjectID		    49
+		    $ObjectID		    50
 		    Type		    "edit"
 		    Name		    "Fbeg"
 		    Prompt		    "Initial frequency sequence (vector Fbeg) [Hz]"
 		    Value		    "chirp_dist.para1"
 		  }
 		  Object {
-		    $ObjectID		    50
+		    $ObjectID		    51
 		    Type		    "edit"
 		    Name		    "Ffin"
 		    Prompt		    "Final frequency sequence (vector Ffin) [Hz]"
 		    Value		    "chirp_dist.para2"
 		  }
 		  Object {
-		    $ObjectID		    51
+		    $ObjectID		    52
 		    Type		    "edit"
 		    Name		    "amp"
 		    Prompt		    "Amplitude (Amp)"
 		    Value		    "0.1"
 		  }
 		  Object {
-		    $ObjectID		    52
+		    $ObjectID		    53
 		    Type		    "edit"
 		    Name		    "T0"
 		    Prompt		    "Instant of the initial frequency sequence injection 'T0'"
 		    Value		    "chirp_dist.freq1_init_time"
 		  }
 		  Object {
-		    $ObjectID		    53
+		    $ObjectID		    54
 		    Type		    "edit"
 		    Name		    "T1"
 		    Prompt		    "instant to run a chirp 'T1'"
 		    Value		    "chirp_dist.chirp_init_time"
 		  }
 		  Object {
-		    $ObjectID		    54
+		    $ObjectID		    55
 		    Type		    "edit"
 		    Name		    "Tb"
 		    Prompt		    "Transition time between  Fbeg and Ffin ('Tb') \"slope=(Ffin-Fbeg)/Tb\""
 		    Value		    "chirp_dist.chirp_dur_time"
 		  }
 		  Object {
-		    $ObjectID		    55
+		    $ObjectID		    56
 		    Type		    "edit"
 		    Name		    "T2"
 		    Prompt		    "Time duration of the final frequency sequence Ffin 'T2'"
 		    Value		    "chirp_dist.freq2_dur_time"
 		  }
 		  Object {
-		    $ObjectID		    56
+		    $ObjectID		    57
 		    Type		    "edit"
 		    Name		    "Te"
 		    Prompt		    "Sample time"
@@ -4635,7 +4649,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    57
+	    $ObjectID		    58
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "load bruitbench before launching simulator"
 	    Initialization	    "load bruitbench"
@@ -4955,7 +4969,7 @@ Model {
       RequestExecContextInheritance off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		58
+	$ObjectID		59
 	$ClassName		"Simulink.Mask"
 	Display			"disp('Controller')"
       }
@@ -5060,7 +5074,7 @@ Model {
 	Name			"Subsystem"
 	Location		[8, 0, 988, 1080]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -5865,7 +5879,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "dist. ID"
-	    Location		    [8, 0, 988, 1080]
+	    Location		    [8, 0, 991, 1080]
 	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
 	    Open		    on
 	    PortBlocksUseCompactNotation off
@@ -6903,7 +6917,7 @@ Model {
     Annotation {
       SID		      "504"
       Name		      "Narrow band disturbance Rejection\nXu Chen and Masayoshi Tomizuka\nchx@uw.edu\nUniversity of Washin"
-      "gton\n\nlevel 1: 1 sinusoid rejection\nbenchmark project by Prof. Landau"
+      "gton\n\nlevel 1: 1 sinusoid rejection\nbenchmark project by Ioan Landau"
       Position		      [53, 213, 226, 306]
       InternalMargins	      [0, 0, 0, 0]
       BackgroundColor	      "lightBlue"
@@ -7149,9 +7163,6 @@ Stateflow {
     screen		    [1 1 1920 1080 1.333333333333333]
     treeNode		    [0 13 0 0]
     viewObj		    12
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    16
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
