@@ -1,4 +1,4 @@
-[cover](./cover.jpg)
+![cover](./cover.jpg)
 
 # MACS Adaptive Regulation Benchmark (MACS ARB)
 
