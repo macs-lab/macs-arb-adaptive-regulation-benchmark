@@ -78,7 +78,7 @@ while 1
 end
 
 disp('===================================================================')
-disp('CHOSE WHETHER OR NOT TO SAVE THE TEST DATA.')
+disp('CHOOSE WHETHER OR NOT TO SAVE THE TEST DATA.')
 while 1
     SW_SAVE_DATA = input('Save the test result?\n   1(default, press ENTER): yes\n   0: no\n:');
     if isempty(SW_SAVE_DATA)
